@@ -1,0 +1,76 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ana",
+      "age": 20,
+      "course": "Computer Science"
+    },
+    {
+      "id": 2,
+      "name": "Mark",
+      "age": 22,
+      "course": "Information Technology"
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "age": 19,
+      "course": "Software Engineering"
+    },
+    {
+      "id": 4,
+      "name": "Maria",
+      "age": 23,
+      "course": "Data Science"
+    },
+    {
+      "id": 5,
+      "name": "James",
+      "age": 21,
+      "course": "Cybersecurity"
+    }
+  ],
+  "courses": [
+    {
+      "name": "Computer Science",
+      "description": "Study of algorithms, programming, and computing systems."
+    },
+    {
+      "name": "Information Technology",
+      "description": "Focus on managing and deploying computer systems and networks."
+    },
+    {
+      "name": "Software Engineering",
+      "description": "Application of engineering principles to software development."
+    },
+    {
+      "name": "Data Science",
+      "description": "Exploration of data analysis, visualization, and machine learning."
+    },
+    {
+      "name": "Cybersecurity",
+      "description": "Protection of systems, networks, and programs from cyber threats."
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "John Rey Silverio",
+      "subjects": "Modern JavaScript & Next.js Prerequisites",
+      "courses": ["Computer Science", "Information Technology", "Software Engineering"]
+    },
+    {
+      "id": 2,
+      "name": "Maria Santos",
+      "subjects": "Data Science Fundamentals",
+      "courses": ["Data Science"]
+    },
+    {
+      "id": 3,
+      "name": "Carlos Dela Cruz",
+      "subjects": "Cybersecurity and Networks",
+      "courses": ["Cybersecurity"]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Classes & Async JavaScript Demo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="header">
+                <h1 class="main-title" data-testid="title-main">
+                    ES6 & Asynchronous Programming
+                </h1>
+                <p class="subtitle">
+                    By Hershey Joy B. Escaro ADV101 (01041) SAT 8am - 12pm
+                </p>
+            </div>
+
+            <div id="loading-spinner" class="loading-container">
+                <div class="loading-card">
+                    <div class="loading-content">
+                        <div class="loading-dots">
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                        </div>
+                        <span class="loading-text">Loading student data...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="error-container" class="error-container" style="display: none;">
+                <div class="error-card">
+                    <p class="error-message">Error: <span id="error-text"></span></p>
+                    <p class="error-details">Please check the console for more details.</p>
+                </div>
+            </div>
+
+            <div id="output" class="output-container" data-testid="div-output" style="display: none;">
+                <div class="main-grid">
+                    <div class="float-animation">
+                        <div class="card pastel-card sparkle-container" data-testid="card-students">
+                            <div class="card-header">
+                                <h3 class="card-title rainbow-pastel-header">Students</h3>
+                            </div>
+                            <div class="card-content">
+                                <div id="students-list" class="item-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="float-animation">
+                        <div class="card pastel-card sparkle-container" data-testid="card-courses">
+                            <div class="card-header">
+                                <h3 class="card-title rainbow-pastel-header">Courses</h3>
+                            </div>
+                            <div class="card-content">
+                                <div id="courses-list" class="item-list course-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="float-animation">
+                        <div class="card pastel-card sparkle-container" data-testid="card-instructors">
+                            <div class="card-header">
+                                <h3 class="card-title rainbow-pastel-header">Instructors</h3>
+                            </div>
+                            <div class="card-content">
+                                <div id="instructors-list" class="item-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relationships-section">
+                    <div class="card relationship-card sparkle-container" data-testid="card-relationships">
+                        <div class="card-header">
+                            <h3 class="card-title rainbow-pastel-header">Relationships</h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="relationships-list" class="item-list"></div>
+                        </div>
+                    </div>
+
+                    <div class="card relationship-card sparkle-container" data-testid="card-course-instructor">
+                        <div class="card-header">
+                            <h3 class="card-title rainbow-pastel-header">Course to Instructor</h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="course-instructor-list" class="item-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer" style="display: none;">
+                <p class="footer-text">
+                    <IT ELECTIVE 1>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
